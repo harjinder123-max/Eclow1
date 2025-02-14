@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - EcoGlow Sunscreen</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        p {
+            color: #555;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .contact-info {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 24px;
+            color: #3498db;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #2980b9;
+        }
+        nav { text-align: center; padding: 10px; background: #f4f4f4; }
+        nav a { margin: 0 15px; text-decoration: none; color: #333; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact EcoGlow Sunscreen</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="About.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <p>EcoGlow Sunscreen is a reef-safe, broad-spectrum SPF 50 sunscreen that protects against harmful UVA and UVB rays while nourishing the skin.</p>
+        
+        <h2>Contact Form</h2>
+        <form>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        
+        <div class="contact-info">
+            <h2>Company Contact Information</h2>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> contact@ecoglowsunscreen.com</p>
+            <p><strong>Address:</strong> 123 Sunbeam Ave, Coastal City, CA 90210</p>
+        </div>
+        
+        <h2>Follow Us</h2>
+        <div class="social-icons">
+            <a href="#">🌍 Website</a>
+            <a href="#">📘 Facebook</a>
+            <a href="#">📷 Instagram</a>
+            <a href="#">🐦 Twitter</a>
+        </div>
+    </div>
+</body>
+</html>

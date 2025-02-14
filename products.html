@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products & Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        nav { text-align: center; padding: 10px; background: #f4f4f4; }
+        nav a { margin: 0 15px; text-decoration: none; color: #333; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <h1 class="text-center mb-4">Products & Services</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="About.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <div class="row">
+            <!-- GlowHydrate Serum -->
+            <div class="col-md-6 mb-4">
+                <div class="product-card">
+                    <img src="images/serum.jpg" alt="GlowHydrate Serum">
+                    <h3 class="mt-3">GlowHydrate Serum</h3>
+                    <p>GlowHydrate Serum is a deeply nourishing and hydrating facial serum designed to rejuvenate the skin with natural, eco-friendly ingredients.</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#serumModal">Learn More</button>
+                </div>
+            </div>
+            <!-- EcoGlow Sunscreen -->
+            <div class="col-md-6 mb-4">
+                <div class="product-card">
+                    <img src="images/sun.png" alt="EcoGlow Sunscreen">
+                    <h3 class="mt-3">EcoGlow Sunscreen</h3>
+                    <p>EcoGlow Sunscreen is a reef-safe, broad-spectrum SPF 50 sunscreen that protects against harmful UVA and UVB rays while nourishing the skin.</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sunscreenModal">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center mt-5">Case Study</h2>
+        <p class="text-center">After switching to EcoGlow products, 90% of users reported improved hydration and sun protection, with dermatologists endorsing its effectiveness.</p>
+    </div>
+
+    <!-- GlowHydrate Serum Modal -->
+    <div class="modal fade" id="serumModal" tabindex="-1" aria-labelledby="serumModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serumModalLabel">GlowHydrate Serum Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Infused with hyaluronic acid, vitamin C, and green tea extract, this serum restores moisture, boosts collagen production, and protects against environmental damage.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EcoGlow Sunscreen Modal -->
+    <div class="modal fade" id="sunscreenModal" tabindex="-1" aria-labelledby="sunscreenModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sunscreenModalLabel">EcoGlow Sunscreen Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Made with non-toxic zinc oxide, aloe vera, and chamomile extract, EcoGlow Sunscreen soothes and protects the skin from sun damage.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

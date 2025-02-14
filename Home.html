@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoGlow - Sustainable Skincare</title> 
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #4CAF50; color: white; padding: 20px; text-align: center; }
+        nav { text-align: center; padding: 10px; background: #f4f4f4; }
+        nav a { margin: 0 15px; text-decoration: none; color: #333; font-weight: bold; }
+        section { padding: 20px; text-align: center; }
+        footer { background-color: #4CAF50; color: white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+        
+        /* Slideshow styles */
+        .slideshow-container {
+            position: relative;
+            max-width: 100%; 
+            margin: auto;
+        }
+        .slides {
+            display: none;
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .fade {
+            animation: fadeEffect 2s infinite;
+        }
+        @keyframes fadeEffect {
+            from { opacity: 0.4; }
+            to { opacity: 1; }
+        }
+        .cta-buttons button {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .cta-buttons button:hover {
+            background-color: #45a049;
+        }
+        footer {
+    position: relative;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EcoGlow - Sustainable Skincare</h1>
+        <p>Natural beauty, eco-friendly solutions</p>
+    </header>
+    
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="About.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    
+    <section id="home">
+        <h2>Welcome to EcoGlow</h2>
+        <p>Discover the power of nature with our sustainable skincare products.</p>
+        <div class="slideshow-container">
+            <img class="slides fade" src="images/image1.jpg" alt="Slide 1">
+            <img class="slides fade" src="images/image2.jpg" alt="Slide 2">
+            <img class="slides fade" src="images/image3.jpg" alt="Slide 3">
+            <img class="slides fade" src="images/image4.jpg" alt="Slide 4">
+        </div>
+        <div class="cta-buttons">
+            <button onclick="location.href='#shop'">Shop Now</button>
+            <button onclick="location.href='#quote'">Get a Quote</button>
+            <button onclick="location.href='#learn'">Learn More</button>
+        </div>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>EcoGlow is dedicated to creating eco-friendly, cruelty-free skincare solutions.</p>
+    </section>
+    
+    <section id="products">
+        <h2>Our Products</h2>
+        <h3>GlowHydrate Serum</h3>
+        <p>A deeply hydrating serum infused with organic botanicals.</p>
+        <h3>EcoGlow Sunscreen</h3>
+        <p>Reef-safe, natural sunscreen to protect your skin and the planet.</p>
+    </section>
+    
+    <section id="shop">
+        <h2>Shop Now</h2>
+        <p>Browse our collection of eco-friendly skincare products and make a purchase today.</p>
+        <button>Start Shopping</button>
+    </section>
+    
+    <section id="quote">
+        <h2>Get a Quote</h2>
+        <p>Looking for bulk orders or custom skincare solutions? Get in touch with us for a personalized quote.</p>
+        <button>Request a Quote</button>
+    </section>
+    
+    <section id="learn">
+        <h2>Learn More</h2>
+        <p>Discover the benefits of sustainable skincare and how we are making a difference.</p>
+        <button>Read More</button>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@ecoglowskincare.com</p>
+        <p>Phone: +123 456 7890</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 EcoGlow. All rights reserved.</p>
+        <p>Disclaimer: This website is for educational purposes only.</p>
+    </footer>
+    
+    <script>
+        let slideIndex = 0;
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000);
+        }
+        showSlides();
+    </script>
+</body>
+</html>
